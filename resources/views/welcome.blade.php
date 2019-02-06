@@ -58,10 +58,12 @@
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
+                transition: font-size 0.1s;
             }
 
             .links > a:hover {
                 color: black;
+                font-size: 22px;
             }
 
             .m-b-md {
