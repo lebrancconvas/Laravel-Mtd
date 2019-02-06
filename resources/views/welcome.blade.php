@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Matilda SiamDream Fansite</title>
+        <link rel="shortcut icon" href="../img/matilda1.jpg" type="image/jpg">
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
@@ -42,6 +43,7 @@
 
             .content {
                 text-align: center;
+                z-index: 5;
             }
 
             .title {
@@ -51,15 +53,29 @@
             .links > a {
                 color: #636b6f;
                 padding: 0 25px;
-                font-size: 13px;
+                font-size: 20px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
             }
 
+            .links > a:hover {
+                color: black;
+            }
+
             .m-b-md {
                 margin-bottom: 30px;
+            }
+
+            .bgimage {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                opacity: 0.2;
+                filter: alpha(opacity = 20);
             }
         </style>
     </head>
@@ -81,17 +97,16 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Matilda SiamDream Fansite
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="/main">Go to Website</a>
                 </div>
+            </div>
+
+            <div class="bgimage">
+                <img src="{{ URL::to('/img/matilda24.jpg') }}" alt="mtdbg">
             </div>
         </div>
     </body>
